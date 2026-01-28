@@ -22,15 +22,3 @@ Click the **"+ Create New Key"** button (usually located in the top right corner
 * **Key Name:** Enter a descriptive name (e.g., `production-app-key`).
 * **Models:** Select specific models if needed, or leave blank to allow all.
 * **Budget (Optional):** Set a max budget if required.
-
-### 4. Set Metadata & Priority Reservation
-To enforce the priority reservation, you must add the configuration to the **Metadata** field.
-
-1.  Locate the **Metadata** input field.
-2.  Paste the following JSON object exactly as shown:
-
-```json
-{
-  "priority": "realtime" // avaliable are realtime, realtime-dev, extract-spo
-}
-```
