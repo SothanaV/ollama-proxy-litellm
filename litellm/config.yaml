@@ -7,16 +7,9 @@ model_list:
 
 router_settings:
   # Enable Redis Caching/Queuing
-  enable_redis: true
   redis_host: os.environ/REDIS_HOST
   # redis_password: os.environ/REDIS_PASSWORD
   redis_port: os.environ/REDIS_PORT
-  
-  # PRIORITY LOGIC
-  priority_reservation:
-    realtime: 0.7      # Priority 3: 700 RPM guaranteed
-    realtime-dev: 0.2  # Priority 2: 200 RPM guaranteed
-    extract-spo: 0.1   # Priority 1: 100 RPM guaranteed
 
 general_settings:
   # If SPO fills its 100 RPM, extra requests go to Redis Queue
