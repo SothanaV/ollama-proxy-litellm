@@ -14,3 +14,6 @@ general_settings:
   # If SPO fills its 100 RPM, extra requests go to Redis Queue
   # Realtime requests bypass this queue because they have their own 700 RPM lane.
   allow_requests_queue: true
+
+litellm_settings:
+  drop_params: true
